@@ -293,7 +293,7 @@ namespace Tonic {
   // -- Misc --
   
   inline static TonicFloat randomSample(){
-    return ((TonicFloat)rand()/RAND_MAX) * 2.0f - 1.0f;
+    return ((TonicFloat)rand()/(TonicFloat)RAND_MAX) * 2.0f - 1.0f;
   }
   
   static float randomFloat(float a, float b) {
@@ -317,9 +317,9 @@ namespace Tonic {
   static void error(string message, bool fatal = false){
     // maybe also log to console?
     printf("Tonic::error: %s\n", message.c_str() );
-    if (fatal){
-      throw TonicException(message);
-    }
+    // if (fatal){
+    //   throw TonicException(message);
+    // }
   }
   
   static void warning(string message){
