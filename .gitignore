@@ -37,6 +37,7 @@ DerivedData/
 # NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
 
 build/
+build_emsdk/
 
 
 #####
@@ -135,6 +136,11 @@ lib/iOS/
 # Linux object files
 
 *.o
+
+####
+# Windows object files
+
+*.obj
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
