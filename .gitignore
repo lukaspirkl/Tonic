@@ -141,6 +141,7 @@ lib/iOS/
 # Windows object files
 
 *.obj
+*.bc
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
